@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mybatis.mappers.Test">
+	<select id="test" resultType="string">
+		<![CDATA[
+			SELECT * from typing_keyword
+		]]>
+		<!-- <if test="_parameter != null and _parameter != ''"> where title like
+			'%${keyword}%' and contents like '%${keyword}%' '%안%' 이걸 전부다 만들어서 들어왔다면 #{keyword}로
+			써주면되지만 아니니까 '%${keyword}%' </if> -->
+	</select>
+
+
+</mapper>
